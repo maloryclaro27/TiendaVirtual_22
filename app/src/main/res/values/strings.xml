@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TiendaVirtual</string>
+    <string name="name">Nombre</string>
+    <string name="msg_name">Digite el nombre</string>
+    <string name="msg_precio">Precio</string>
+    <string name="msg_descrip">Descripción</string>
+    <string name="hepl_digite_descrip">Digite Descripción</string>
+    <string name="help_digite_precio">Digite precio</string>
+    <string name="help_digite_url_de_la_imagen">Digite Url de la imagen</string>
+    <string name="msg_imagen">Imagen</string>
+    <string name="btn_agregar">Agregar</string>
+    <string name="gf_okla1">Gafas de sol Oklay</string>
+    <string name="_75_000_cop">75.000 COP</string>
+
+</resources>
