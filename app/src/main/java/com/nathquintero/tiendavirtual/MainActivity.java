@@ -10,9 +10,12 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -23,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
 
     private Toolbar topAppBar;
 
+    private User userSession = new User();
+
+    private ImageView userImageProfil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
 
         loadFakeData();
 
+        userImageProfil = findViewById(R.id.iv_profile_home_user);
+        Picasso.get().load(userSession.getUrlImageProfil()).into(userImageProfil);
         rvProductsMain = findViewById(R.id.rv_products_main);
         topAppBar = findViewById(R.id.top_app_bar_list_product);
         ProductAdapter myAdapter = new ProductAdapter(listproducts);
@@ -62,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loadFakeData() {
-        Product producto1 = new Product("Gafas de sol", "Oklay, para hombre", 75000.0, "https://drive.google.com/file/d/1G4MpvvEdY3emIbtN0reeI8deMiSVVA0t/view?usp=sharing");
+        Product producto1 = new Product("Gafas de sol", "Oklay, para hombre", 75000.0, "https://w7.pngwing.com/pngs/693/844/png-transparent-towelie-youtube-comedy-central-youtube-white-child-text.png");
         Product producto2 = new Product("Gafas de sol", "Calvin Klein, para hombre", 65000.0, "https://drive.google.com/file/d/1G4MpvvEdY3emIbtN0reeI8deMiSVVA0t/view?usp=sharing");
         Product producto3 = new Product("Gafas de sol", "Carolina Herrera, para dama", 75000.0, "https://drive.google.com/file/d/1G4MpvvEdY3emIbtN0reeI8deMiSVVA0t/view?usp=sharing");
         Product producto4 = new Product("Gafas de sol", "Balenciaga, para dama", 55000.0, "https://drive.google.com/file/d/1G4MpvvEdY3emIbtN0reeI8deMiSVVA0t/view?usp=sharing");
@@ -72,5 +80,11 @@ public class MainActivity extends AppCompatActivity {
         listproducts.add(producto3);
         listproducts.add(producto4);
         listproducts.add(producto5);
+
+        userSession.setName("Malory");
+        userSession.setEmail("mclaro834@unab.edu.co");
+        userSession.setPassword("holaxd");
+        userSession.setPhone("3154453945");
+        userSession.setUrlImageProfil("https://www.dzoom.org.es/wp-content/uploads/2020/02/portada-foto-perfil-redes-sociales-consejos.jpg");
     }
 }
