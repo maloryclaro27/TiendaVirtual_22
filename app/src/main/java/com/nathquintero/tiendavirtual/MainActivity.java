@@ -70,11 +70,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loadFakeData() {
-        Product producto1 = new Product("Gafas de sol", "Oklay, para hombre", 75000.0, "https://w7.pngwing.com/pngs/693/844/png-transparent-towelie-youtube-comedy-central-youtube-white-child-text.png");
-        Product producto2 = new Product("Gafas de sol", "Calvin Klein, para hombre", 65000.0, "https://drive.google.com/file/d/1G4MpvvEdY3emIbtN0reeI8deMiSVVA0t/view?usp=sharing");
-        Product producto3 = new Product("Gafas de sol", "Carolina Herrera, para dama", 75000.0, "https://drive.google.com/file/d/1G4MpvvEdY3emIbtN0reeI8deMiSVVA0t/view?usp=sharing");
-        Product producto4 = new Product("Gafas de sol", "Balenciaga, para dama", 55000.0, "https://drive.google.com/file/d/1G4MpvvEdY3emIbtN0reeI8deMiSVVA0t/view?usp=sharing");
-        Product producto5 = new Product("Gafas de sol", "Versache, para dama", 80000.0, "https://drive.google.com/file/d/1G4MpvvEdY3emIbtN0reeI8deMiSVVA0t/view?usp=sharing");
+        Product producto1 = new Product("Camiseta The Smiths", "Unisex", 80000.0, "https://www.jaimitocamisetas.com/cdn/shop/files/camisetathesmithsqueenisdead.png?v=1692301051&width=1946");
+        Product producto2 = new Product("Camiseta Blink-182", "Unisex", 70000.0, "https://w7.pngwing.com/pngs/555/229/png-transparent-t-shirt-blink-182-tour-amazon-com-california-t-shirt-tshirt-logo-active-shirt.png");
+        Product producto3 = new Product("Camiseta Kanye West", "Unisex", 80000.0, "https://www.google.com/url?sa=i&url=https%3A%2F%2Fdroveclo.com%2Fdrove-black-power-kanye-west%2F&psig=AOvVaw1N4pvrfiHjJqWw4CE1Zy_u&ust=1712763266192000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMjbs966tYUDFQAAAAAdAAAAABAE");
+        Product producto4 = new Product("Camiseta The Smiths", "Unisex", 75000.0, "https://ceberro.com/wp-content/uploads/2022/10/minimal-flat-lay-tee-mockup-featuring-a-plain-background-95-el-11.png");
+        Product producto5 = new Product("Camiseta The Beatles", "Unisex", 80000.0, "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fes%2Ffree-png-troal&psig=AOvVaw2x3SuiSp60g0U1aAW6W28G&ust=1712763460262000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKDy97q7tYUDFQAAAAAdAAAAABAE");
         listproducts.add(producto1);
         listproducts.add(producto2);
         listproducts.add(producto3);
