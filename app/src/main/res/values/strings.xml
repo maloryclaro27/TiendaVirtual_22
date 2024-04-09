@@ -13,5 +13,7 @@
     <string name="_75_000_cop">75.000 COP</string>
     <string name="bienvenido">Bienvenido</string>
     <string name="agregar_product">Agregar Product</string>
+    <string name="color">color</string>
+    <string name="nombre">Nombre:</string>
 
 </resources>

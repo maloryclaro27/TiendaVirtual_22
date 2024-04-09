@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(MainActivity.this, FormProductActivity.class));
                     return true;
                 } else if (item.getItemId() == R.id.item_add_category) {
-                    Toast.makeText(MainActivity.this, "Clic e}n ADD CATEGORY", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(MainActivity.this, CategoryActivity.class));
                     return true;
                 }
                 return false;

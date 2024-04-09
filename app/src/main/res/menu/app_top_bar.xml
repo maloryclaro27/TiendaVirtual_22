@@ -6,7 +6,7 @@
         />
     <item
         android:id="@+id/item_add_category"
-        android:title="@string/agregar_product"
+        android:title="Categorías"
         />
 
 </menu>
